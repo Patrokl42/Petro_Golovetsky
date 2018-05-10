@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <title>Distance</title>
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            #map {
+                height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+                height: 90%;
+                margin: 0;
+                padding: 0;
+            }
+            .input{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <div class="custom">
+
+        </div>
+        <div class="input">
+            <span>Ведіть ваші кординати</span>
+            <form>
+                <p><label >lat:</label><input type="text" id="lat" >
+                    <label >lng:</label><input type="text" id="lng" >
+                    <input type="button" id="enter" value="Задати">
+                </p>
+            </form>
+        </div>
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADSfcp8DDRVJ6UUbEm3AiAt4bgwbIzDb0"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
